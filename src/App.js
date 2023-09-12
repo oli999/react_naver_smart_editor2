@@ -1,9 +1,6 @@
 
 import {useEffect, useRef, useState} from 'react';
 import {initEditor} from './editor/SmartEditor';
-import axios from 'axios';
-axios.defaults.baseURL="http://localhost:9000/";
-
 
 function App() {
 	
