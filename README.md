@@ -1,13 +1,17 @@
 ### Naver SmartEditor2 를 React Js + spring boot 환경에서 사용하는 예제 입니다.
 
 >      [ 설정 방법 ]
->      SmartEditor/photo_uploader/popup/attach_photo.js 파일을 열어서
+>      1. SmartEditor/photo_uploader/popup/attach_photo.js 파일을 열어서
 >      339 번째 Line 에  
 >  
 >      sUploadURL="http://localhost:9000/editor_upload";
 >  
->      이 부분을 프로젝트 상황에 맞게 변경해야 Editor 에서 사진 업로드가 가능하다 
+>      이 부분을 프로젝트 상황에 맞게 변경해야 Editor 에서 사진 업로드가 가능하다
+> 
+>      2. 개발시에 에디터에 사진을 표시되게 하려면 package.json 파일에  "proxy" 서버 설정이 필수이다.  
 >
+>      "proxy" : "백엔드 서버의 base url"
+> 
 >      아래는 spring boot 컨트롤러 예시 입니다.     
 
 ```java
